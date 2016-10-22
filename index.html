@@ -1,7 +1,138 @@
 <!DOCTYPE html>
 <html>
-<body>
-hello!<br>
-there is not maintained yet.
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal Resume</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/morris.css">
+        <script src="/jquery-3.1.1.min.js"></script>
+        <script src="/raphael.min.js"></script>
+        <script src="/morris.min.js"></script>
+    </head>
+    <body>
+        <div id="avatar">
+            <img id="avatar_img" src="/title.png" width="20%">
+        </div>
+        <h1>Kuo Teng, Ding</h1>
+
+        <div id="social-links">
+            <a id="link" href="https://twitter.com/rapirent"><i class="fa fa-twitter fa-2x"></i></a>  •  
+            <a id="link" href="https://www.facebook.com/rapirent" ><i class="fa fa-facebook fa-2x"></i></a>  •   
+            <a id="link" href="https://github.com/rapirent" ><i class="fa fa-github fa-2x"></i></a>  •  
+            <a id="link" href="https://plus.google.com/100714781179246881059" ><i class="fa fa-google-plus-official fa-2x"></i></a>  •  
+            <a id="link" href="https://plus.google.com/100714781179246881059" ><i class="fa fa-slideshare fa-2x"></i></a>
+        </div>
+        <div id="contact">
+            <a href="mailto:rapirent@gmail.com">rapirent@gmail.com</a>
+              •  (07)7102327  •  
+            <abbr title="Nation Cheng Kung University Victory 1 Boy Dorm">Tainan, Taiwan(R.O.C)</abbr>
+        </div>
+        <div id="summary">
+            Kuo Teng is currently majoring in CSIE.<br>
+            As a transfers from engineering science, he keens on embedded system and low level C programming.<br>
+            But he is also open to all new thing, welcoming to new experience.<br>
+            So His interests includes not only the subject mentioned above but also functional language and algorithm.<br>
+            Currently, Kuo Teng is investigating in web programming.<br>
+        </div>
+
+
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <td>2014 ~ 2015 </td>
+                <td>
+                    <b>Engineering Science, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+            <tr>
+                <td>2015 ~ Now </td>
+                <td>
+                    <b>Computer Science and Information Engineering, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+        </table>
+        
+        <h3>Honors and Awards</h3>
+        <table>
+            <tr>
+                <td>2014</td>
+                <td>
+                    <b>English proficiency test, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>
+                    <b>English proficiency test, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+            <tr>
+                <td>2014 ~ 2015</td>
+                <td>
+                    <b>甲等獎 in Academic Calculus Exam, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+            <tr>
+                <td>2014 ~ 2015</td>
+                <td>
+                    <b>Outstanding Student For the Academic Achievement, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+        </table>
+        <h4>Certificates</h4>
+            <ul>
+                <li>Japanese Language Proficiency Test  <b>N5 level</b></li>
+            </ul>
+        <h5>Skills and Hobbies</h3>
+            <ul>
+                <li>
+                    <b>Programming Skills</b>
+                    <div id="chart1" style="height: 250px;"></div>
+                </li>
+                <li>
+                    <b>Interest</b>
+                    <div id="chart2" style="height: 250px;"></div>
+                </li>        
+            </ul>
+        <script type="text/javascript">
+            Morris.Donut({
+		    element: 'chart1',
+		    data: [
+			    {value: 80, label: 'Google'},
+                {value: 2, label: 'Java'},
+			    {value: 2, label: 'HTML/CSS/Js'},
+			    {value: 2, label: 'Python/Perl'},
+                {value: 10, label: 'C/C++'},
+                {value: 1, label: 'Others'},
+		    ],
+		    formatter: function (x) { return x + "%"}
+		              }).on('click', function(i, row) {
+		      });
+            Morris.Donut({
+		    element: 'chart2',
+		    data: [
+			    {value: 30, label: 'History'},
+                {value: 5, label: 'Military'},
+			    {value: 10, label: 'Cooking'},
+			    {value: 15, label: 'Novel'},
+                {value: 15, label: 'Movie'},
+                {value: 25, label: 'Programming'},
+		    ],
+		    formatter: function (x) { return x + "%"}
+		              }).on('click', function(i, row) {
+		      });
+        </script>
+<!--        浮動游標-->
+    </body>
+    <footer>
+        <p>2016 KuoTeng, Ding</p>
+    </footer>
 </html>
