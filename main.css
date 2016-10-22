@@ -52,13 +52,15 @@ li {
     background: rgba(255,255,255,1);
 }
 
-/*true footer*/
+/*
+true footer
 footer {
     max-width: 800px;
     margin: 0em auto;
     width:100%;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
 }
+*/
 
 #footer {
     background: #fff;
