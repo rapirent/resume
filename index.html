@@ -10,8 +10,20 @@
         <script src="/jquery-3.1.1.min.js"></script>
         <script src="/raphael.min.js"></script>
         <script src="/morris.min.js"></script>
+        <script src="/main.js"></script>
     </head>
     <body>
+    <div id="menu">
+        <ul>
+                <li><a href="#avatar">Me</a></li> 
+				<li><a href="#Education">Education</a></li>
+				<li><a href="#Honors and Awards">Honors and Awards</a></li>
+				<li><a href="#Certificates">Certificates</a></li>
+				<li><a href="#Skills and Hobbies">Skills and Hobbies</a></li>
+				<li><a href="#Activities Participation">Activities Participation</a></li>
+        </ul>
+    </div>
+    <div id="footer">
         <div id="avatar">
             <img id="avatar_img" src="/title.png" width="20%">
         </div>
@@ -31,22 +43,15 @@
         </div>
         <div id="summary">
             Kuo Teng is currently majoring in CSIE.<br>
-            As a transfers from engineering science, he keens on embedded system and low level C programming.<br>
-            But he is also open to all new thing, welcoming to new experience.<br>
-            So His interests includes not only the subject mentioned above but also functional language and algorithm.<br>
+            As a transfer from engineering science, he keens on embedded system and low level C programming.<br>
+            But he is also open to all new things, welcoming to new experiences.<br>
+            So His interests include not only the subject mentioned above but also functional language and algorithm.<br>
             Currently, Kuo Teng is investigating in web programming.<br>
         </div>
 
 
-        <h2>Education</h2>
+        <h2 id="Education">Education</h2>
         <table>
-            <tr>
-                <td>2014 ~ 2015 </td>
-                <td>
-                    <b>Engineering Science, </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
             <tr>
                 <td>2015 ~ Now </td>
                 <td>
@@ -54,14 +59,28 @@
                     <i>National Cheng Kung University, Tainan</i>
                 </td>
             </tr>
+            <tr>
+                <td>2014 ~ 2015 </td>
+                <td>
+                    <b>Engineering Science, </b>
+                    <i>National Cheng Kung University, Tainan</i>
+                </td>
+            </tr>
+                <tr>
+                <td>2012 ~ 2014 </td>
+                <td>
+                    <b>High School, </b>
+                    <i>National Feng Hsin Senior High School, Kaohsiung</i>
+                </td>
+            </tr>
         </table>
         
-        <h3>Honors and Awards</h3>
+        <h3 id="Honors and Awards">Honors and Awards</h3>
         <table>
-            <tr>
-                <td>2014</td>
+                <tr>
+                <td>2014 ~ 2015</td>
                 <td>
-                    <b>English proficiency test, </b>
+                    <b>Outstanding Student For the Academic Achievement, </b>
                     <i>National Cheng Kung University, Tainan</i>
                 </td>
             </tr>
@@ -80,18 +99,18 @@
                 </td>
             </tr>
             <tr>
-                <td>2014 ~ 2015</td>
+                <td>2014</td>
                 <td>
-                    <b>Outstanding Student For the Academic Achievement, </b>
+                    <b>English proficiency test, </b>
                     <i>National Cheng Kung University, Tainan</i>
                 </td>
             </tr>
         </table>
-        <h4>Certificates</h4>
+        <h4 id="Certificates">Certificates</h4>
             <ul>
                 <li>Japanese Language Proficiency Test  <b>N5 level</b></li>
             </ul>
-        <h5>Skills and Hobbies</h3>
+        <h5 id="Skills and Hobbies">Skills and Hobbies</h3>
             <ul>
                 <li>
                     <b>Programming Skills</b>
@@ -102,6 +121,7 @@
                     <div id="chart2" style="height: 250px;"></div>
                 </li>        
             </ul>
+        <h6 id="Activities Participation">Activities Participation</h6>
         <script type="text/javascript">
             Morris.Donut({
 		    element: 'chart1',
@@ -130,7 +150,7 @@
 		              }).on('click', function(i, row) {
 		      });
         </script>
-<!--        浮動游標-->
+    </div>
     </body>
     <footer>
         <p>2016 KuoTeng, Ding</p>
