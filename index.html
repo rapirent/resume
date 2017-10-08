@@ -1,164 +1,201 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal Resume</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/morris.css">
-        <script src="/jquery-3.1.1.min.js"></script>
-        <script src="/raphael.min.js"></script>
-        <script src="/morris.min.js"></script>
-        <script src="/main.js"></script>
-    </head>
-    <body>
-    <div id="menu">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personal Resume</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/morris.css">
+  <script src="/jquery-3.1.1.min.js"></script>
+  <script src="/raphael.min.js"></script>
+  <script src="/morris.min.js"></script>
+  <script src="/main.js"></script>
+</head>
+
+<body>
+  <div id="menu">
+    <ul>
+      <li><a href="#avatar">Me</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Honors and Awards">Honors and Awards</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+      <li><a href="#Skills and Hobbies">Skills and Hobbies</a></li>
+      <li><a href="#Activities Participation">Activities Participation</a></li>
+    </ul>
+  </div>
+  <div id="footer">
+    <div id="avatar">
+      <img id="avatar_img" src="/title.png" width="20%">
+    </div>
+    <h1>Kuo Teng, Ding</h1>
+
+    <div id="social-links">
+      <a id="link" href="https://twitter.com/rapirent"><i class="fa fa-twitter fa-2x"></i></a> •
+      <a id="link" href="https://www.facebook.com/rapirent"><i class="fa fa-facebook fa-2x"></i></a> •
+      <a id="link" href="https://github.com/rapirent"><i class="fa fa-github fa-2x"></i></a> •
+      <a id="link" href="https://plus.google.com/100714781179246881059"><i class="fa fa-google-plus-official fa-2x"></i></a>      •
+      <a id="link" href="http://www.slideshare.net/KuoTengDing"><i class="fa fa-slideshare fa-2x"></i></a>
+    </div>
+    <div id="contact">
+      <a href="mailto:rapirent@gmail.com">rapirent@gmail.com</a> • (07)7102327 •
+      <abbr title="Nation Cheng Kung University Victory 1 Boy Dorm">Tainan, Taiwan(R.O.C)</abbr>
+    </div>
+    <div id="summary">
+      Kuo Teng is currently majoring in CSIE.<br> As a transfer from engineering science, he keens on embedded system and
+      low level C programming.<br> But he is also open to all new things, welcoming to new experiences.<br> So His interests
+      include not only the subject mentioned above but also functional language and algorithm.<br> Currently, Kuo Teng is
+      investigating in web programming.<br>
+    </div>
+
+
+    <h2 id="Education">Education</h2>
+    <table>
+      <tr>
+        <td>2015 ~ Now </td>
+        <td>
+          <b>Computer Science and Information Engineering, </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+      <tr>
+        <td>2014 ~ 2015 </td>
+        <td>
+          <b>Engineering Science, </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+      <tr>
+        <td>2012 ~ 2014 </td>
+        <td>
+          <b>High School, </b>
+          <i>National Feng Hsin Senior High School, Kaohsiung</i>
+        </td>
+      </tr>
+    </table>
+
+    <h3 id="Honors and Awards">Honors and Awards</h3>
+    <table>
+      <tr>
+        <td>2014 ~ 2015</td>
+        <td>
+          <b>Outstanding Student For the Academic Achievement, </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+      <tr>
+        <td>2015</td>
+        <td>
+          <b>傑出獎 in English Proficiency Test (大一英文會考), </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+      <tr>
+        <td>2014 ~ 2015</td>
+        <td>
+          <b>甲等獎 in Academic Calculus Exam (全校微積分競試), </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+      <tr>
+        <td>2014</td>
+        <td>
+          <b>傑出獎 in English Proficiency Test (大一英文會考), </b>
+          <i>National Cheng Kung University, Tainan</i>
+        </td>
+      </tr>
+    </table>
+    <h4 id="Certificates">Certificates</h4>
+    <ul>
+      <li><b>N5 level</b> in Japanese Language Proficiency Test</li>
+    </ul>
+    <h5 id="Activities Participation">Activities Participation</h6>
+      <table>
+        <tr>
+          <td>2015</td>
+          <td>
+            <b>Lecturer(授課講師) in school winter camp, </b>
+            <i>Scratch創意遊戲設計營, Shengli Elementary School, Tainan</i>
+          </td>
+        </tr>
+      </table>
+      <h6 id="Skills and Hobbies">Skills and Hobbies</h3>
         <ul>
-                <li><a href="#avatar">Me</a></li> 
-				<li><a href="#Education">Education</a></li>
-				<li><a href="#Honors and Awards">Honors and Awards</a></li>
-				<li><a href="#Certificates">Certificates</a></li>
-				<li><a href="#Skills and Hobbies">Skills and Hobbies</a></li>
-				<li><a href="#Activities Participation">Activities Participation</a></li>
+          <li>
+            <b>Programming Skills</b>
+            <div id="chart1" style="height: 250px;"></div>
+          </li>
+          <li>
+            <b>Interest</b>
+            <div id="chart2" style="height: 250px;"></div>
+          </li>
         </ul>
-    </div>
-    <div id="footer">
-        <div id="avatar">
-            <img id="avatar_img" src="/title.png" width="20%">
-        </div>
-        <h1>Kuo Teng, Ding</h1>
-
-        <div id="social-links">
-            <a id="link" href="https://twitter.com/rapirent"><i class="fa fa-twitter fa-2x"></i></a>  •  
-            <a id="link" href="https://www.facebook.com/rapirent" ><i class="fa fa-facebook fa-2x"></i></a>  •   
-            <a id="link" href="https://github.com/rapirent" ><i class="fa fa-github fa-2x"></i></a>  •  
-            <a id="link" href="https://plus.google.com/100714781179246881059" ><i class="fa fa-google-plus-official fa-2x"></i></a>  •  
-            <a id="link" href="http://www.slideshare.net/KuoTengDing" ><i class="fa fa-slideshare fa-2x"></i></a>
-        </div>
-        <div id="contact">
-            <a href="mailto:rapirent@gmail.com">rapirent@gmail.com</a>
-              •  (07)7102327  •  
-            <abbr title="Nation Cheng Kung University Victory 1 Boy Dorm">Tainan, Taiwan(R.O.C)</abbr>
-        </div>
-        <div id="summary">
-            Kuo Teng is currently majoring in CSIE.<br>
-            As a transfer from engineering science, he keens on embedded system and low level C programming.<br>
-            But he is also open to all new things, welcoming to new experiences.<br>
-            So His interests include not only the subject mentioned above but also functional language and algorithm.<br>
-            Currently, Kuo Teng is investigating in web programming.<br>
-        </div>
-
-
-        <h2 id="Education">Education</h2>
-        <table>
-            <tr>
-                <td>2015 ~ Now </td>
-                <td>
-                    <b>Computer Science and Information Engineering, </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-            <tr>
-                <td>2014 ~ 2015 </td>
-                <td>
-                    <b>Engineering Science, </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-                <tr>
-                <td>2012 ~ 2014 </td>
-                <td>
-                    <b>High School, </b>
-                    <i>National Feng Hsin Senior High School, Kaohsiung</i>
-                </td>
-            </tr>
-        </table>
-        
-        <h3 id="Honors and Awards">Honors and Awards</h3>
-        <table>
-                <tr>
-                <td>2014 ~ 2015</td>
-                <td>
-                    <b>Outstanding Student For the Academic Achievement, </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-            <tr>
-                <td>2015</td>
-                <td>
-                    <b>傑出獎 in English Proficiency Test (大一英文會考), </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-            <tr>
-                <td>2014 ~ 2015</td>
-                <td>
-                    <b>甲等獎 in Academic Calculus Exam (全校微積分競試), </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-            <tr>
-                <td>2014</td>
-                <td>
-                    <b>傑出獎 in English Proficiency Test (大一英文會考), </b>
-                    <i>National Cheng Kung University, Tainan</i>
-                </td>
-            </tr>
-        </table>
-        <h4 id="Certificates">Certificates</h4>
-            <ul>
-                <li><b>N5 level</b> in Japanese Language Proficiency Test</li>
-            </ul>
-        <h5 id="Activities Participation">Activities Participation</h6>
-        <table>
-            <tr>
-                <td>2015</td>
-                <td>
-                    <b>Lecturer(授課講師) in school winter camp, </b>
-                    <i>Scratch創意遊戲設計營, Shengli Elementary School, Tainan</i>
-                </td>
-            </tr>
-        </table>
-        <h6 id="Skills and Hobbies">Skills and Hobbies</h3>
-            <ul>
-                <li>
-                    <b>Programming Skills</b>
-                    <div id="chart1" style="height: 250px;"></div>
-                </li>
-                <li>
-                    <b>Interest</b>
-                    <div id="chart2" style="height: 250px;"></div>
-                </li>        
-            </ul>
         <script type="text/javascript">
-            Morris.Donut({
-		    element: 'chart1',
-		    data: [
-			    {value: 80, label: 'Google'},
-                {value: 2, label: 'Java'},
-			    {value: 2, label: 'HTML/CSS/Js'},
-			    {value: 2, label: 'Python/Perl'},
-                {value: 10, label: 'C/C++'},
-                {value: 1, label: 'Others'},
-		    ],
-		    formatter: function (x) { return x + "%"}
-		              }).on('click', function(i, row) {
-		      });
-            Morris.Donut({
-		    element: 'chart2',
-		    data: [
-			    {value: 30, label: 'History'},
-                {value: 5, label: 'Military'},
-			    {value: 10, label: 'Cooking'},
-			    {value: 15, label: 'Novel'},
-                {value: 15, label: 'Movie'},
-                {value: 25, label: 'Programming'},
-		    ],
-		    formatter: function (x) { return x + "%"}
-		              }).on('click', function(i, row) {
-		      });
+          Morris.Donut({
+            element: 'chart1',
+            data: [{
+                value: 80,
+                label: 'Google'
+              },
+              {
+                value: 2,
+                label: 'Java'
+              },
+              {
+                value: 2,
+                label: 'HTML/CSS/Js'
+              },
+              {
+                value: 2,
+                label: 'Python/Perl'
+              },
+              {
+                value: 10,
+                label: 'C/C++'
+              },
+              {
+                value: 1,
+                label: 'Others'
+              },
+            ],
+            formatter: function (x) {
+              return x + "%"
+            }
+          }).on('click', function (i, row) {});
+          Morris.Donut({
+            element: 'chart2',
+            data: [{
+                value: 30,
+                label: 'History'
+              },
+              {
+                value: 5,
+                label: 'Military'
+              },
+              {
+                value: 10,
+                label: 'Cooking'
+              },
+              {
+                value: 15,
+                label: 'Novel'
+              },
+              {
+                value: 15,
+                label: 'Movie'
+              },
+              {
+                value: 25,
+                label: 'Programming'
+              },
+            ],
+            formatter: function (x) {
+              return x + "%"
+            }
+          }).on('click', function (i, row) {});
         </script>
-    </div>
-    </body>
+  </div>
+</body>
+
 </html>
